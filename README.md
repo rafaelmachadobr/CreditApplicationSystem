@@ -1,4 +1,27 @@
-# Sistema de Avaliação de Crédito
+<h1>Sistema de Avaliação de Crédito</h1>
+
+<p align="center">API Rest para um Sistema de Analise de Solicitação de Crédito</p>
+
+<p align="center">
+     <a alt="Java">
+        <img src="https://img.shields.io/badge/Java-v17-blue.svg" />
+    </a>
+    <a alt="Kotlin">
+        <img src="https://img.shields.io/badge/Kotlin-v1.8.22-purple.svg" />
+    </a>
+    <a alt="Spring Boot">
+        <img src="https://img.shields.io/badge/Spring%20Boot-v3.1.5-brightgreen.svg" />
+    </a>
+    <a alt="Gradle">
+        <img src="https://img.shields.io/badge/Gradle-v8.3-lightgreen.svg" />
+    </a>
+    <a alt="H2 ">
+        <img src="https://img.shields.io/badge/H2-v2.2.224-darkblue.svg" />
+    </a>
+    <a alt="Flyway">
+        <img src="https://img.shields.io/badge/Flyway-v9.22.3-red.svg">
+    </a>
+</p>
 
 ## Sobre o Projeto 📝
 
