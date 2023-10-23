@@ -1,10 +1,9 @@
 package me.dio.creditapplicationsystem.service
 
-import me.dio.creditapplicationsystem.entity.Credit
-import java.util.*
+import me.dio.creditapplicationsystem.entity.Customer
 
 interface ICustomerService {
-    fun save(credit: Credit): Credit
-    fun findAllByCustomer(customerId: Long): List<Credit>
-    fun findByCreditCode(creditCode: UUID): Credit
+    fun save(customer: Customer): Customer
+    fun findById(id: Long): Customer
+    fun delete(id: Long)
 }
