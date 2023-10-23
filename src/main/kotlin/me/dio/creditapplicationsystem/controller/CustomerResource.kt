@@ -28,6 +28,7 @@ class CustomerResource(
         return ResponseEntity.status(HttpStatus.OK).body(CustomerView(customer))
     }
 
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     fun deleteCustomer(@PathVariable id: Long) = this.customerService.delete(id)
 
