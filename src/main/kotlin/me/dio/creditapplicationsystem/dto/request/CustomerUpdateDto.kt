@@ -1,4 +1,4 @@
-package me.dio.creditapplicationsystem.dto
+package me.dio.creditapplicationsystem.dto.request
 
 import jakarta.validation.constraints.NotEmpty
 import jakarta.validation.constraints.NotNull
