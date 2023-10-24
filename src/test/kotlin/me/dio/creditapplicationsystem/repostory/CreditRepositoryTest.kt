@@ -15,7 +15,7 @@ import org.springframework.test.context.ActiveProfiles
 import java.math.BigDecimal
 import java.time.LocalDate
 import java.time.Month
-import java.util.UUID
+import java.util.*
 
 @ActiveProfiles("test")
 @DataJpaTest
@@ -23,6 +23,7 @@ import java.util.UUID
 class CreditRepositoryTest {
     @Autowired
     lateinit var creditRepository: CreditRepository
+
     @Autowired
     lateinit var testEntityManager: TestEntityManager
 
@@ -66,6 +67,17 @@ class CreditRepositoryTest {
         numberOfInstallments = numberOfInstallments,
         customer = customer
     )
+
+    @Test
+    fun `should find all credits by customer id`() {
+        val customerId: Long = 1L
+
+        val creditList: List<Credit> = creditRepository.findAllByCustomerId(customerId)
+
+        Assertions.assertThat(creditList).isNotEmpty
+        Assertions.assertThat(creditList.size).isEqualTo(2)
+        Assertions.assertThat(creditList).contains(credit1, credit2)
+    }
 
     private fun buildCustomer(
         firstName: String = "Cami",
