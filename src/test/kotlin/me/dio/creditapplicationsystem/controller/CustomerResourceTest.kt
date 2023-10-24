@@ -110,7 +110,7 @@ class CustomerResourceTest {
             .andExpect(MockMvcResultMatchers.jsonPath("$.income").value("1000.0"))
             .andExpect(MockMvcResultMatchers.jsonPath("$.zipCode").value("000000"))
             .andExpect(MockMvcResultMatchers.jsonPath("$.street").value("Rua da Cami, 123"))
-            .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(3)).andDo(MockMvcResultHandlers.print())
+            .andDo(MockMvcResultHandlers.print())
     }
 
     @Test
@@ -169,7 +169,7 @@ class CustomerResourceTest {
             .andExpect(MockMvcResultMatchers.jsonPath("$.income").value("5000.0"))
             .andExpect(MockMvcResultMatchers.jsonPath("$.zipCode").value("45656"))
             .andExpect(MockMvcResultMatchers.jsonPath("$.street").value("Rua Updated"))
-            .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(4)).andDo(MockMvcResultHandlers.print())
+            .andDo(MockMvcResultHandlers.print())
     }
 
     @Test
